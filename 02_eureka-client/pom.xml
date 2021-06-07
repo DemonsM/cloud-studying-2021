@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>02_eureka_client</artifactId>
+    <artifactId>02_eureka-client</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
