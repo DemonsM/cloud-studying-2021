@@ -8,6 +8,9 @@
     <artifactId>cloud-studying-2021</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>01_eureka-server</module>
+    </modules>
 
     <!--继承springboot的父项目-->
     <parent>
