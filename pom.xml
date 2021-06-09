@@ -12,6 +12,8 @@
         <module>01_eureka-server</module>
         <module>02_eureka-client</module>
         <module>03_consul-client</module>
+        <module>04_user-service</module>
+        <module>05_product-service</module>
     </modules>
 
     <!--继承springboot的父项目-->
