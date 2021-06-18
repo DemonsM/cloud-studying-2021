@@ -1,0 +1,39 @@
+server:
+  port: 8801
+
+spring:
+  application:
+    name: GATEWAY
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+    gateway:
+      discovery:
+        locator:
+          #          开启自动以服务名注册route
+          enabled: true
+          #          小写serviceId
+          lower-case-service-id: true
+      routes:
+#        - id: USER-SERVICE
+#          uri: lb://USER-SERVICE
+#          predicates:
+#            - Path=/user/**,/user1/**
+#        - id: USER-SERVICE
+#          uri: lb://USER-SERVICE
+#          predicates:
+#            - Path=/api/user_service/**
+#          filters:
+#            - StripPrefix=2
+#        - id: PRODUCT-SERVICE
+#          uri: lb://PRODUCT-SERVICE
+#          predicates:
+#            - Path=/product/**
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
