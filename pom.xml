@@ -16,6 +16,7 @@
         <module>05_product-service</module>
         <module>06_hystrix</module>
         <module>07_gateway</module>
+        <module>08_config</module>
     </modules>
 
     <!--继承springboot的父项目-->

@@ -1,0 +1,17 @@
+server:
+  port: 7878
+
+spring:
+  application:
+    name: CONFIG-SERVER
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+    config:
+      server:
+        git:
+          uri: https://gitee.com/demonMt/cloud-studying-2021-config.git
+          default-label: master
